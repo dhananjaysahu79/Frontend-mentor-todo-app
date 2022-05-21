@@ -1,38 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
 .App {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #181824;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-background-image {
+  width: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* height: 90vh; */
+  width: 50%;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -200px;
 }
-
 .App-link {
   color: #61dafb;
 }
+.Column {
+  margin-top: -150px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-field {
+  background: #25273C;
+  border: none;
+  border-style: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 30px;
+  outline: none;
+  height: 50px;
+  width: 100%;
+}
+
+.todo-heading {
+  letter-spacing: 8px;
+}
+.todo-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background: #25273C;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  width: 100%;
+  height: 60px;
+}
+
+
+
+.radio-container {
+  height: 50px;
+  padding-left: 18px;
+  display: flex;
+  background-color: #25273C;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 1px solid hsl(233, 14%, 35%);
+  border-radius: 30px;
+}
+.check:checked {
+  background: url('./images/icon-check.svg') no-repeat 4px 5px, linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-size: contain;
+}
+
+.check:hover {
+  border: 1px solid hsl(192, 100%, 67%);
+}
+
+.heading-theme-icon-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+
+.todo-text {
+  margin-left: 30px;
+  width: 100%;
+  color: hsl(234, 39%, 85%);
+}
+.close-icon {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.sized-box {
+  height: 20px;
+}
+
+.button-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#mobile-card {
+  display: none;
+  visibility: hidden;
+}
+
+
+.clear-completed-text {
+  margin-right: 20px;
+  color: hsl(233, 14%, 35%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.clear-completed-text:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.item-left-text {
+  margin-left: 20px;
+  font-size: 16px;
+  color: hsl(233, 14%, 35%);
+}
+
+a {
+  color: hsl(233, 14%, 35%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+a:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.sun-icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .top-background-image {
+    height: 35vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header {
+    width: 90%;
+  }
+  
+  #button-container1 {
+    display: none;
+  }
+
+  .button-container {
+    width: 50%;
+  }
+
+  #mobile-card {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
   }
 }
+
+.attribution {
+  font-size: 14px;
+  color: hsl(234, 39%, 85%);
+}
+
+  /* Invert a binary tree */
+  /* depth of the binary tree */
