@@ -153,13 +153,13 @@
   color: hsl(233, 14%, 35%);
 }
 
-a {
+.functionality-text {
   color: hsl(233, 14%, 35%);
   cursor: pointer;
   font-size: 16px;
 }
 
-a:hover {
+.functionality-text:hover {
   color: hsl(236, 33%, 92%);
 }
 
