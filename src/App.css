@@ -13,43 +13,32 @@
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  background-color: #181824;
 }
+
 
 .top-background-image {
   width: 100%;
+  height: fit-content;
 }
 
 .App-header {
-  /* height: 90vh; */
-  width: 50%;
+  width: 38%;
   color: white;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: -200px;
+  margin-top: -240px;
 }
 .App-link {
   color: #61dafb;
 }
-.Column {
-  margin-top: -150px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .text-field {
-  background: #25273C;
+  background: hsl(235, 24%, 19%);
   border: none;
   border-style: none;
-  color: #fff;
   font-size: 18px;
   padding: 0 30px;
   outline: none;
-  height: 50px;
   width: 100%;
 }
 
@@ -66,10 +55,8 @@
   justify-content: space-between;
   text-align: start;
   width: 100%;
-  height: 60px;
+  height: 65px;
 }
-
-
 
 .radio-container {
   height: 50px;
@@ -85,7 +72,7 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
-  border: 1px solid hsl(233, 14%, 35%);
+  border: 1px solid;
   border-radius: 30px;
 }
 .check:checked {
@@ -102,22 +89,24 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 15px;
   justify-content: space-between;
 }
 
 .divider {
   width: 100%;
-  border-bottom: 1px solid hsl(233, 14%, 35%);
+  border-bottom: 1px solid;
 }
 
 .todo-text {
   margin-left: 30px;
   width: 100%;
-  color: hsl(234, 39%, 85%);
+
 }
 .close-icon {
   margin-right: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .sized-box {
@@ -144,7 +133,7 @@
 }
 
 .clear-completed-text:hover {
-  color: hsl(236, 33%, 92%);
+  color: hsl(232, 7%, 58%);
 }
 
 .item-left-text {
@@ -160,20 +149,33 @@
 }
 
 .functionality-text:hover {
-  color: hsl(236, 33%, 92%);
+  color: hsl(232, 7%, 58%);
 }
 
 .sun-icon {
   cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
+
   .top-background-image {
-    height: 35vh;
+    min-height: 30vh;
+  }
+  .App-header {
+    width: 60%;
+    margin-top: -22%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    width: 92%;
+    margin-top: -220px;
+    font-size: medium;
   }
 
-  .App-header {
-    width: 90%;
+  .todo-input-wrapper {
+    height: 60px;
   }
   
   #button-container1 {
@@ -188,6 +190,10 @@
     display: flex;
     visibility: visible;
     justify-content: center;
+  }
+
+  .close-icon {
+    visibility: visible;
   }
 }
 
