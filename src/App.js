@@ -163,6 +163,7 @@ function App() {
           <div className='radio-container'
             style={darkMode ? darkCard : lightCard}
           >
+            <label>
             <input
               style={
                 darkMode ? darkDivider : lightDivider
@@ -170,6 +171,7 @@ function App() {
               className='check'
               id = 'text-field-checkbox'
               type='checkbox'></input>
+            </label>
           </div>
           <input type='text'
             onKeyDown={handleAddTodo}
@@ -195,13 +197,15 @@ function App() {
                       <div className='radio-container'
                         style={darkMode ? darkCard : lightCard}
                       >
-                        <input
-                          style={
-                            darkMode ? darkDivider : lightDivider
-                          }
-                          checked={todoStatus[todo]}
-                          onClick={() => handleCheckClick(todo)}
-                          className='check' type='checkbox'></input>
+                        <label>
+                          <input
+                            style={
+                              darkMode ? darkDivider : lightDivider
+                            }
+                            checked={todoStatus[todo]}
+                            onClick={() => handleCheckClick(todo)}
+                            className='check' type='checkbox'></input>
+                        </label>
                       </div>
 
                       <p style={
@@ -273,7 +277,7 @@ function App() {
         <p className='item-left-text'>Drag and drop to reorder list</p>
         <div className='sized-box'></div>
         <div class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="">Frontend Mentor</a>   |
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="#">Frontend Mentor</a>   |
           Coded by <a href="https://github.com/dhananjaysahu79">Dhananjay Sahu</a>
         </div>
         <div className='sized-box'></div>
