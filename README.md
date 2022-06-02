@@ -6,8 +6,8 @@ https://www.frontendmentor.io/
 [todo-app](https://frontend-mentor-todo-app79.netlify.app/)
 
 **Screenshots**
-[!](Screenshots/ss1.png)
-[!](Screenshots/ss2.png)
+![](Screenshots/ss1.png)
+![](Screenshots/ss2.png)
 
 In the project directory, you can run:
 
